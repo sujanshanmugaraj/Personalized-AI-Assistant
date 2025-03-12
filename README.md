@@ -2,40 +2,63 @@
 
 1. Overview
 Objective:
+
 The project develops a Personal AI Communication Assistant to streamline Gmail, Slack, and WhatsApp by prioritizing messages, summarizing chats, and suggesting smart replies. It boosts productivity with automation, reminders, and AI insights, reducing overload and improving workflow.
+
  Key Problem Statements:
+ 
 ●	Overwhelming Communication Workload – Managing messages across Gmail, Slack, and WhatsApp is time-consuming and inefficient.
+
 ●	Inefficient Response Management – Users struggle with drafting replies, tracking follow-ups, and handling repetitive messages.
+
 ●	Lack of Cross-Platform Integration – No unified system exists to manage, prioritize, and synchronize messages across platforms.
-2. Tools, Libraries, and Frameworks Used
+
+3. Tools, Libraries, and Frameworks Used
+
 Development & Environment:
+
 ●	Python (Primary language)
+
 ●	VS Code (Development environment)
+
 ●	Git & GitHub (Version control and collaboration)
+
 ●	SQLite (Database)
+
 ●	Selenium (Automation & Web Interaction)
+
 ●	Flask (For API server)
+
 ●	Google Gemini AI
+
 ●	Google Gmail API
+
 ●	Slack API
+
 Libraries Used:
+
 1)	Authentication & Environment Management:
+
 •	os (Handle environment variables)
 •	dotenv (Load environment variables from .env files)
 •	pickle (Store and retrieve OAuth tokens)
 
 2)	AI & NLP:
+
 •	Transformers (NLP model for summarization)
 •	Spacy (NLP model for text processing)
 •	sklearn.feature_extraction.text.TfidfVectorizer (Text vectorization for similarity matching)
 •	sklearn.metrics.pairwise.cosine_similarity (Compute similarity scores)
 
 3)	Google & Slack Integration:
+
 •	google_auth_oauthlib.flow  (OAuth authentication for Gmail API)
 •	google.oauth2.credentials (Manage OAuth tokens)
 •	googleapiclient.discovery  (Interact with Gmail API)
 •	google.generativeai  (Google Gemini AI for text generation)
 •	slack_sdk  (Slack bot integration)
+
+
 3. Methodology & Approach
 
 1. Gmail Integration (Email Summarization & Reply Suggestions)
